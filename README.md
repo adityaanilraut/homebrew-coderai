@@ -1,6 +1,6 @@
 # Homebrew Tap for CoderAI
 
-This is the official Homebrew tap for [CoderAI](https://github.com/adityaanilraut/CoderAI), an intelligent coding agent CLI tool with MCP tools and Rich terminal UI.
+This is the official Homebrew tap for [CoderAI](https://github.com/adityaanilraut/homebrew-coderai), an intelligent coding agent CLI tool with MCP tools and Rich terminal UI.
 
 ## Installation
 
