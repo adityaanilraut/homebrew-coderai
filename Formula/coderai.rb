@@ -3,8 +3,8 @@ class Coderai < Formula
 
   desc "Intelligent Coding Agent CLI with MCP tools and Rich UI"
   homepage "https://github.com/adityaanilraut/CoderAI"
-  url "https://github.com/adityaanilraut/CoderAI/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed"
+  url "https://github.com/adityaanilraut/CoderAI/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "f9e57535ebcc451550c79e1f25dc874d7d0acdff070ec16acf2796012dd4bc00"
   license "MIT"
 
   depends_on "python@3.12"
@@ -52,6 +52,16 @@ class Coderai < Formula
   resource "prompt-toolkit" do
     url "https://files.pythonhosted.org/packages/cc/c6/25b6a3d5cd295304de1e32c9edbcf319a52e965b339629d37d42bb7126ca/prompt_toolkit-3.0.43.tar.gz"
     sha256 "3527b7af26106cbc65a040bcc84839a3566ec1b051bb0bfe953631e704b0ff7d"
+  end
+
+  resource "pyyaml" do
+    url "https://files.pythonhosted.org/packages/05/8e/961c0007c59b8dd7729d542c61a4d537767a59645b82a0b521206e1e25c2/pyyaml-6.0.3.tar.gz"
+    sha256 "d76623373421df22fb4cf8817020cbb7ef15c725b9d5e45f17e189bfc384190f"
+  end
+
+  resource "groq" do
+    url "https://files.pythonhosted.org/packages/9f/bc/7ad1d9967c58b21cdec0c94f26f40fc37b07ba60715d6cbc7c7ef775d927/groq-1.1.1.tar.gz"
+    sha256 "ea971eca72d88e875a78567904bfb46a2f2e43907bfe400fc36a81150a4066d8"
   end
 
   def install
