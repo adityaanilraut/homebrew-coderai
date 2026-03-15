@@ -1,78 +1,99 @@
-# Homebrew Tap for CoderAI
+# 🍺 Homebrew Tap for CoderAI
 
-This is the official Homebrew tap for [CoderAI](https://github.com/adityaanilraut/homebrew-coderai), an intelligent coding agent CLI tool with MCP tools and Rich terminal UI.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
+[![CoderAI Version](https://img.shields.io/badge/CoderAI-v0.1.1-success)](#)
 
-## Installation
+This is the official [Homebrew](https://brew.sh/) tap for **[CoderAI](https://github.com/adityaanilraut/CoderAI)**, an intelligent, agentic coding assistant CLI tool equipped with Model Context Protocol (MCP) tools and a beautiful Rich terminal UI.
 
-### Tap this repository
+---
 
-```bash
-brew tap adityaanilraut/coderai
-```
+## 🚀 Installation
 
-### Install CoderAI
+You can install CoderAI using the Homebrew package manager on macOS or Linux.
 
-```bash
-brew install coderai
-```
-
-### Or install directly in one command
+### Method 1: Install directly (Recommended)
 
 ```bash
 brew install adityaanilraut/coderai/coderai
 ```
 
-## Usage
-
-After installation, you can start using CoderAI:
+### Method 2: Tap then install
 
 ```bash
-# Interactive mode
+brew tap adityaanilraut/coderai
+brew install coderai
+```
+
+### Upgrading
+
+To upgrade CoderAI to the latest version:
+
+```bash
+brew update
+brew upgrade coderai
+```
+
+---
+
+## 💻 Quick Start
+
+After installation, CoderAI is globally available in your terminal. Here are a few ways to use it:
+
+```bash
+# Start an interactive chat session
 coderAI chat
 
-# Single-shot mode
-coderAI "your prompt here"
+# Run a single prompt directly from the command line
+coderAI "write a python script to parse logs"
 
-# Show version
+# Check your installed version
 coderAI --version
 
-# Show help
+# View the full help menu
 coderAI --help
 ```
 
-## Configuration
+---
 
-Configure your API keys:
+## ⚙️ Configuration
 
+CoderAI supports multiple LLM providers. Before running it, ensure you configure your API keys or endpoints:
+
+### OpenAI / Core Models
 ```bash
-# Set OpenAI API key
-coderAI config set openai_api_key YOUR_API_KEY
-
-# Configure LM Studio endpoint (for local models)
-coderAI config set lmstudio_endpoint http://localhost:1234/v1
+coderAI config set openai_api_key "sk-..."
 ```
 
-## Features
+### Groq Models
+```bash
+coderAI config set groq_api_key "gsk_..."
+```
 
-- **Rich Terminal UI**: Beautiful syntax highlighting, progress indicators, tables, and panels
-- **Multiple LLM Support**: GPT-5, GPT-5-mini, GPT-5-nano, and LM Studio local models
-- **Comprehensive MCP Tools**: File operations, terminal execution, Git operations, codebase search, web search, and memory
-- **Session Management**: Persistent conversation history with export and resume capabilities
-- **Streaming Responses**: Real-time token-by-token display
+### Local Models (LM Studio / Ollama)
+```bash
+coderAI config set lmstudio_endpoint "http://localhost:1234/v1"
+coderAI config set ollama_endpoint "http://localhost:11434/api"
+```
 
-## Documentation
+---
 
-For full documentation, visit the [main repository](https://github.com/adityaanilraut/CoderAI).
+## ✨ Key Features
 
-## Support
+- **Rich Terminal UI**: Experience beautiful syntax highlighting, live progress indicators, and dynamic conversational panels.
+- **Multiple LLM Support**: Seamlessly integrate with OpenAI (GPT-4o, o1, etc.), Groq, Anthropic, or local models via Ollama/LM Studio.
+- **Agentic MCP Tools**: Empowered with file system control, terminal command execution, Git integration, and robust web search.
+- **Memory & Context**: Persistent session history, contextual memory, and intelligent codebase context resolution.
+- **Real-time Streaming**: Get instant feedback with token-by-token response streaming.
 
-If you encounter any issues:
+---
 
-1. Check the [main repository issues](https://github.com/adityaanilraut/CoderAI/issues)
-2. Open a new issue if needed
-3. For tap-specific issues, open an issue in this repository
+## 📚 Documentation & Support
 
-## License
+- **Main Repository**: [adityaanilraut/CoderAI](https://github.com/adityaanilraut/CoderAI)
+- **Issue Tracker (Bugs/Features)**: [CoderAI Issues](https://github.com/adityaanilraut/CoderAI/issues)
+- **Tap Issues (Installation problems)**: [homebrew-coderai Issues](https://github.com/adityaanilraut/homebrew-coderai/issues)
 
-MIT License - see the [LICENSE](https://github.com/adityaanilraut/CoderAI/blob/main/LICENSE) file for details.
+## 📄 License
 
+This tap and the CoderAI project are distributed under the [MIT License](https://github.com/adityaanilraut/CoderAI/blob/main/LICENSE).
