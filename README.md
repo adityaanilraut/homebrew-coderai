@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](https://www.python.org/downloads/release/python-3120/)
-[![CoderAI Version](https://img.shields.io/badge/CoderAI-v0.1.1-success)](#)
+[![CoderAI Version](https://img.shields.io/badge/CoderAI-v0.3.2-success)](#)
 
 This is the official [Homebrew](https://brew.sh/) tap for **[CoderAI](https://github.com/adityaanilraut/CoderAI)**, an intelligent, agentic coding assistant CLI tool equipped with Model Context Protocol (MCP) tools and a beautiful Rich terminal UI.
 

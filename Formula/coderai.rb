@@ -3,8 +3,8 @@ class Coderai < Formula
 
   desc "Intelligent Coding Agent CLI with MCP tools and Rich UI"
   homepage "https://github.com/adityaanilraut/CoderAI"
-  url "https://github.com/adityaanilraut/CoderAI/archive/refs/tags/v0.3.1.tar.gz"
-  sha256 "fdb7d9d5b2b81af14748a85a09c34fdb93f4499292ecd750d8fa1b29375f164f"
+  url "https://github.com/adityaanilraut/CoderAI/archive/refs/tags/v0.3.2.tar.gz"
+  sha256 "d254eee134dab35f98ce55c7b28cd5d3d363610669a9b791bd62bec738364be5"
   license "MIT"
 
   depends_on "rust" => :build
